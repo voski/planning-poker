@@ -1,0 +1,40 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Planning Poker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Planning Poker</h1>
+
+  <div id="join-section">
+    <form id="join-form">
+      <input type="text" id="name-input" placeholder="Enter your name" required />
+      <button type="submit" id="join-btn">Join</button>
+    </form>
+  </div>
+
+  <div id="game-section" style="display: none;">
+    <div id="players-list"></div>
+    <div id="vote-section">
+      <h2>Cast Your Vote</h2>
+      <div id="cards">
+        <!-- Fibonacci cards will be generated here -->
+      </div>
+      <button id="reset-btn">Reset Game</button>
+    </div>
+    <div id="results-section" style="display: none;">
+      <h2>Votes Revealed</h2>
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+
+</html>

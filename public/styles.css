@@ -1,0 +1,28 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#cards button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#players-list, #results {
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+#players-list ul, #results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#players-list li, #results li {
+    padding: 5px 0;
+}
+
